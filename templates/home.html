@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gold Price Prediction</title>
+</head>
+<body>
+    <h1>Gold Price Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="SPX">SPX:</label>
+        <input type="text" name="SPX" required><br><br>
+        <label for="USO">USO:</label>
+        <input type="text" name="USO" required><br><br>
+        <label for="SLV">SLV:</label>
+        <input type="text" name="SLV" required><br><br>
+        <label for="EURUSD">EUR/USD:</label>
+        <input type="text" name="EURUSD" required><br><br>
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    {% if prediction %}
+    <p>{{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
