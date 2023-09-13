@@ -8,7 +8,7 @@ Original file is located at
 """
 pip install Flask
 from flask import Flask, render_template, request, jsonify
-
+import numpy as np
 import pickle
 from sklearn.preprocessing import StandardScaler
 
